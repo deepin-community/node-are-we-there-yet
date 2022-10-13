@@ -1,0 +1,31 @@
+Source: node-are-we-there-yet
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+ , node-delegates <!nocheck>
+ , node-readable-stream <!nocheck>
+ , node-tap <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-are-we-there-yet
+Vcs-Git: https://salsa.debian.org/js-team/node-are-we-there-yet.git
+Homepage: https://github.com/iarna/are-we-there-yet
+Rules-Requires-Root: no
+
+Package: node-are-we-there-yet
+Architecture: all
+Depends: ${misc:Depends}
+ , node-delegates
+ , node-readable-stream
+Description: Keep track of the overall completion of many disparate processes
+ Track complex hierarchies of asynchronous task completion statuses.  This is
+ intended to give you a way of recording and reporting the progress of the big
+ recursive fan-out and gather type workflows that are so common in async.
+ .
+ What you do with this completion data is up to you, but the most common use
+ case is to feed it to one of the many progress bar modules.
+ .
+ Node.js is an event-based server-side JavaScript engine.
