@@ -1,18 +1,18 @@
 Source: node-are-we-there-yet
+Section: javascript
+Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Pirate Praveen <praveen@debian.org>
-Section: javascript
-Testsuite: autopkgtest-pkg-nodejs
-Priority: optional
 Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
  , node-delegates <!nocheck>
  , node-readable-stream <!nocheck>
  , node-tap <!nocheck>
- , dh-sequence-nodejs
-Standards-Version: 4.6.0
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-are-we-there-yet
 Vcs-Git: https://salsa.debian.org/js-team/node-are-we-there-yet.git
 Homepage: https://github.com/iarna/are-we-there-yet
+Testsuite: autopkgtest-pkg-nodejs
 Rules-Requires-Root: no
 
 Package: node-are-we-there-yet
@@ -20,6 +20,7 @@ Architecture: all
 Depends: ${misc:Depends}
  , node-delegates
  , node-readable-stream
+Provides: ${nodejs:Provides}
 Description: Keep track of the overall completion of many disparate processes
  Track complex hierarchies of asynchronous task completion statuses.  This is
  intended to give you a way of recording and reporting the progress of the big
