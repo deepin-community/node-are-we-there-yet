@@ -1,3 +1,31 @@
+node-are-we-there-yet (3.0.1+~1.1.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * New upstream version 3.0.1+~1.1.0
+
+ -- Yadd <yadd@debian.org>  Tue, 16 Aug 2022 12:21:59 +0200
+
+node-are-we-there-yet (3.0.0+~1.1.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix test (Closes: #1009548):
+    + really launch test
+    + add --no-cov for tap >= 15
+
+ -- Yadd <yadd@debian.org>  Thu, 14 Apr 2022 12:21:35 +0200
+
+node-are-we-there-yet (3.0.0+~1.1.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Fix filenamemangle
+  * Embed typescript declarations
+  * New upstream version 3.0.0+~1.1.0
+  * Update copyright
+  * Drop useless patch
+
+ -- Yadd <yadd@debian.org>  Sat, 12 Feb 2022 08:14:22 +0100
+
 node-are-we-there-yet (1.1.5-2) unstable; urgency=medium
 
   * Team upload

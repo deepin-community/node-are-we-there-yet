@@ -1,4 +1,27 @@
-Hi, figured we could actually use a changelog now:
+# Changelog
+
+## [3.0.1](https://github.com/npm/are-we-there-yet/compare/v3.0.0...v3.0.1) (2022-07-21)
+
+
+### Bug Fixes
+
+* replace deprecated String.prototype.substr() ([#140](https://github.com/npm/are-we-there-yet/issues/140)) ([6145a9e](https://github.com/npm/are-we-there-yet/commit/6145a9ef6908c0feb107ac41f704e0aabe2718d0))
+
+## [3.0.0](https://www.github.com/npm/are-we-there-yet/compare/v2.0.0...v3.0.0) (2022-02-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* This drops support for node10 and non-LTS versions of node 12 and node 14
+
+### Bug Fixes
+
+* @npmcli/template-oss@2.7.1 ([f742777](https://www.github.com/npm/are-we-there-yet/commit/f7427775fcf59185b99693d2e5480e1185de8589))
+
+
+### Documentation
+
+* rename CHANGE.md to CHANGELOG.md ([2667644](https://www.github.com/npm/are-we-there-yet/commit/2667644d37bf9d1d9c25cdf3a133d607f151b8c2))
 
 ## 1.1.5 2018-05-24
 
